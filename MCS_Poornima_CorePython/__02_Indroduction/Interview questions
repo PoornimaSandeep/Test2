@@ -1,0 +1,34 @@
+1.How interpreter works in python.
+  1 .first its checks the syntax formation ,then its correst its convert that into byte code that will done by interpreter
+  2.then the byte code will be send into PVM(python virtual machine) the byte code will execute if errors comes in logic its displaying error messsage otherwise its giving output
+
+2.Python features
+  1.Easy to learn
+  2.Readable
+  3.Interpreted language
+  4.Object Oriented langauage
+  5.Open source
+  6.Large Standard library
+  7.High level language
+  8.Plantform independent
+  9.GUI support
+
+3.Interpreter CPython IronPython Jython
+  cpython->cpython is popular implementation of python written in C, It can be better described as a mixture of both an interpreter and
+           compiler as it converts written Python source code into bytecode.It is this bytecode that gets executed on the CPython Virtual Machine.
+  jpython-jpython is popular implementation of python written in java and can run on java virtual machine
+
+  IronPython -> IronPythoon is implementation of python that has been written in c sharp(c#) and we can run on the .net platform
+
+ 4.Procedure Oriented vs Object oriented programming languages
+
+  Procedure Oriented                                                        oriented programming languages
+  1.In procedural programming, program is divided                           1.In procedural programming, program is divided
+    into small parts called functions.                                         into small parts called objects
+  2.Procedural programming follows top down approach.	                    2.Object oriented programming follows
+                                                                               bottom up approach.
+  3.here is no access specifier in procedural programming.	                3.Object oriented programming have access specifiers
+                                                                              like private, public, protected etc.
+  4.In procedural programming, overloading is not possible.              	4.Overloading is possible in object oriented programming.
+  5.In procedural programing ,function are more important than data           5.In OOP data is more important than function
+

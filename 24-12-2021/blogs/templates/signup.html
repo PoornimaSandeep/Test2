@@ -1,0 +1,10 @@
+<form method=POST action="">
+  {% csrf_token %}
+  {{form.as_p}}
+  {{form.errors}}
+  <input type=submit value="signup">
+  </form>
+  {% if img_obj %}
+    <h3>Succesfully uploaded : {{img_obj.title}}</h3>
+    <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
+  {% endif %}

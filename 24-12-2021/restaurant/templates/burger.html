@@ -1,0 +1,56 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+   <link rel="stylesheet" href={% static "style.css" %} >
+   <style>
+
+     .burger {
+       float: 50%;
+       width: 50%;
+       padding: 10px;
+       height: 300px; /* Should be removed. Only for demonstration */
+     }
+
+     /* Clear floats after the columns */
+     .products:after{
+       display: table;
+       clear: both;
+     }
+     </style>
+</head>
+
+<body>
+
+  <hr width=100% color=red>
+<div class="products">
+     <div class="burger">
+       <img src="{% static "images/burger.jpg" %}" width=50% >
+
+      </div>
+      <div class="burger">
+          <a href="{% url 'cart' %}"><button>addtocart</button><br></a>
+            </div>
+
+
+
+</div>
+<div class="products">
+     <div class="burger">
+       <img src={% static 'images'%} width=50% >
+      </div>
+      <div class="burger">
+        <img src="{% static "images/burger.jpg" %}" width=50% >
+       </div>
+
+       <div class="burger">
+         <img src="{% static "images/burger.jpg" %}" width=50% >
+        </div>
+        <div class="burger">
+          <img src="{% static "images/burger.jpg" %}" width=50% >
+         </div>
+</div>
+</body>
+
+{% endblock %}

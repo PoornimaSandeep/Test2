@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+<style>
+h1 {text-align:center;}
+
+.column
+{
+  float:right;
+  margin-right:50px;
+  font-size:30px;
+}
+.column1
+{
+  display:inline
+  float:left;
+  margin-left:50px;
+  margin-right:50px;
+  font-size:30px;
+}
+
+</style>
+
+
+<form action='' method='post'>
+  {% csrf_token %}
+  <h1> welcome to your portal </h1>
+  <input style="float:right; font-size:30px;" type='submit' value='cart'>
+</form>
+
+<div class="nav">
+   <div class="column">
+     <a href="{% url 'logout' %}">Logout</a>
+
+   </div>
+</div>
+<div class="nav">
+   <div class="column1">
+     <a href=""> <img src="{% static "images/apple.jpg" %}"> </a>
+     <img src="{% static "images/orange.jpg" %}" >
+     <img src="{% static "images/mango.jpg" %}"  >
+     <img src="{% static "images/banana.jpg" %}" >
+     <img src="{% static "images/pineapple.jpg" %}" >
+     <img src="{% static "images/watermelon.jpg" %}" >
+     <img src="{% static "images/papaya.jpg" %}" >
+     <img src="{% static "images/grapes.jpg" %}" >
+   </div>
+</div>
+ <form method='post'>
+   {% csrf_token %}
+  <label for="cars">Choose  which fruit you want to buy:</label>
+  <select name="fruits" id="fruits">
+    <option value="Apple">Apple</option>
+    <option value="Orange">Orange</option>
+    <option value="Mango">Mango</option>
+    <option value="PineApple">PineApple</option>
+  </select>
+  </h2>
+
+
+  </h2>
+  <h2>How much fuits you want to buy <input type="text" name="quantity" ></h2>
+  <input type="submit" value="submit">
+  <br>
+   Total billing amount {{data}}
+</form>
+
+
+</div>
+</body>
+</html>

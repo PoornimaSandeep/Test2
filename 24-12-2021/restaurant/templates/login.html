@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<style>
+body{
+
+     background-image: url({% static 'images/bg2.jpg' %});
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+h1{text-decoration:underline;
+    text-align: center;
+    color:green
+    }
+form
+{margin-left:600px;
+  margin-top:100px;
+  width: 320px;
+  padding: 10px;
+  border: 5px solid white;
+  background-color:white;
+}
+input{font-size:20px;}
+
+</style>
+
+<body>
+<h1 >WELCOME TO BURGER KING </h1>
+<form action='' method='post'>
+  {% csrf_token %}
+
+  <h4>Username :</h4>
+  <input type=text name='username' placeholder='username'><br><br>
+    <h4>Password :</h4>
+  <input type=password name='Password' placeholder='Password'><br><br>
+  <input type="submit" value="Login"><br>
+   <h5>You are new user ? please register here<a href="{% url 'registration' %}">Signup</h5>
+</form>
+
+</body>
+</html>

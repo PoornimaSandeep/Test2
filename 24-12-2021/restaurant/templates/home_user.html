@@ -1,0 +1,86 @@
+{% load static %}
+{% csrf_token %}
+<html>
+<head>
+  <link rel="stylesheet" href={% static "style.css" %}>
+</head>
+
+
+<body>
+  <hr width="100%" color="red">
+  <header>
+      <div id="header">
+    <a href={% url 'cart'%}  > <img src="{% static "images/cart.jpg" %}"  ></a>
+     <a href={% url 'burger'%} > <img src="{% static "images/mail.png" %}"  ></a>
+        <img src="{% static "images/phone-call.png" %}">
+
+
+
+      </div>
+  </header>
+<div class ="nav">
+    <div class="column">
+    <h2>User:{{user.username}}</h2>
+    <a href="{% url 'logout' %} "> <button>Logout</button>
+    </div>
+        <div class="column">
+        <a href="{% url 'contactus' %} "> <h1>Contact Us</h1></a>
+    </div>
+    <div class="column">
+        <a href="{% url 'product' %}"> <h1>Products</h1></a>
+    </div>
+    <div class="column">
+        <a href="{% url 'aboutus' %} "> <h1>About us</h1></a>
+    </div>
+    <div class="column">
+        <a href="{% url 'home' %}"> <h1>Home</h1></a>
+    </div>
+     <div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static "images/logo.jpg" %}" ></a>
+    </div>
+
+
+</div>
+{% block content %}
+
+<hr width="100%" color="red" >
+<img src="{% static "images/front.jpg" %}" alt="nature" width="1507" height="400">
+<br>
+<h1 style="text-align:center">WELCOME TO FRESHFOOD</h1>
+<br>
+<p>
+    Fresh food is food which has not been preserved and has not spoiled yet. For vegetables and fruits, this means that they have been recently harvested and treated properly postharvest; for meat, it has recently been slaughtered and butchered; for fish, it has been recently caught or harvested and kept cold.
+
+Dairy products are fresh and will spoil quickly. Thus, fresh cheese is cheese which has not been dried or salted for aging. Soured cream may be considered "fresh" (crème fraîche).
+
+Fresh food has not been dried, smoked, salted, frozen, canned, pickled, or otherwise preserved.
+    <a href="{% url 'aboutus' %}">More</a>
+
+<div class="nav2">
+
+    <div class="column2">
+      <a href="{% url 'burger' %}" > <img src="{% static "images/burger.jpg" %}" width="100%" ></a>
+    </div>
+    <div class="column2">
+      <a href="{% url 'burger' %}"> <img src="{% static "images/french.jpg" %}" width="100%" ></a>
+    </div>
+    <div class="column2">
+      <a href="{% url 'burger' %}" > <img src="{% static "images/burger.jpg" %}" width="100%" ></a>
+    </div>
+    <div class="column2">
+      <a href="{% url 'burger' %}" > <img src="{% static "images/french.jpg" %}"  width="100%" ></a>
+    </div>
+</div>
+
+</p>
+
+
+
+</body>
+
+{% endblock %}
+<hr width="100%" color="red">
+<footer>
+   <p> Copyright 2021 by Group no:2. All Rights Reserved </p>
+</footer>
+<hr width="100%" color="red">
