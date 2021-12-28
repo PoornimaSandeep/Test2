@@ -1,4 +1,0 @@
-I go through inheritence and types of inheritence
-
-in django,
-i go through the creating of models and fetching the data from the database and display on html page
