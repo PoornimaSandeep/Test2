@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+   Registration page
+{% endblock %}
+
+{% block content %}
+<br>
+<body style="text-align:center">
+<div class="container">
+   <br>
+   <form method="POST" class="from-register" style="color:white">
+   <h1 class="h3 mb-3 font-weight-normal">
+       Please Create your account
+   </h1>
+      <br>
+      {{form.username.label()}}
+      {{form.username(class="form-control",placeholder="User name ")}}
+
+      {{form.Email.label()}}
+      {{form.Email(class="form-control",placeholder="Email : ")}}
+
+      {{form.Phone_num.label()}}
+      {{form.Phone_num(class="form-control",placeholder="Phone number : ")}}
+
+      {{form.password1.label()}}
+      {{form.password1(class="form-control",placeholder="Password :")}}
+
+      {{form.password2.label()}}
+      {{form.password2(class="form-control",placeholder="Confirm-password : ")}}
+
+</form>
+</div>
+</body>
+
+
+{% endblock %}
