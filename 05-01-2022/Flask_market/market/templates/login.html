@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title%}
+   Login Page
+{% endblock %}
+
+{% block content%}
+   <h4>login page</h4>
+   <input name="Username" placeholder="USername:">
+   <input name="Password" placeholder="password">
+    <a href={{url_for('home')}}><button>Login</button></a>
+
+{% endblock %}
