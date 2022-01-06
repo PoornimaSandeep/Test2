@@ -1,0 +1,1 @@
+In flask i go through templates, models and forms
