@@ -1,0 +1,1 @@
+Today i worked on creating login page and validation and display error messages on templates
