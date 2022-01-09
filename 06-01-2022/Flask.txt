@@ -1,1 +1,1 @@
-In flask i go through templates, models and forms
+In flask i go through templates, models and forms creation

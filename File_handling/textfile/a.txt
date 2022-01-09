@@ -1,0 +1,3 @@
+The open command will open the file
+in the read mode and the for
+loop will print each line present in the file.
