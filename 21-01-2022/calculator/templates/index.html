@@ -1,0 +1,70 @@
+<html>
+   <head>
+      <style>
+         .title{
+         margin-top:250px;
+         margin-left:735px;
+         margin-bottom: 10px;
+         text-align:center;
+         width: 210px;
+         color:green;
+         border: solid black 2px;
+         }
+
+         input[type="button"]
+         {
+         background-color:green;
+         color: black;
+         border: solid black 2px;
+         width:100%
+
+         }
+
+         input[type="text"]
+         {
+         background-color:white;
+         border: solid black 2px;
+         width:100%
+         margin-left:200px
+         }
+      </style>
+   </head>
+   <!-- create table -->
+   <body>
+      <div class = title  >Calculator</div>
+      <table border="5" align="center">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="submit" value="1" name="1"> </td>
+            <td><input type="submit" value="2" name="2"/> </td>
+            <td><input type="submit" value="3" name="3"/> </td>
+            <td><input type="submit" value="/" name="/"/> </td>
+         </tr>
+         <tr>
+            <td><input type="submit" value="4" name="4"/> </td>
+            <td><input type="submit" value="5" name="5"/> </td>
+            <td><input type="submit" value="6" name="6"/> </td>
+            <td><input type="submit" value="-" name="-"/> </td>
+         </tr>
+         <tr>
+            <td><input type="submit" value="7" name="7"/> </td>
+            <td><input type="submit" value="8" name="8"/> </td>
+            <td><input type="submit" value="9" name="9"/> </td>
+            <td><input type="submit" value="+" name="+"/> </td>
+         </tr>
+         <tr>
+            <td><input type="submit" value="." name="."/> </td>
+            <td><input type="submit" value="0" name="0"/> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="submit" value="=" name="="/> </td>
+            <td><input type="submit" value="*" name="*"/> </td>
+         </tr>
+      </table>
+   </body>
+</html>
