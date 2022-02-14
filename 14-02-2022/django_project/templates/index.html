@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+{% for i  in data %}
+    <li>{{i.name}}</li>
+     <li>{{i.stu_id}}</li>
+     <li>{{i.Kannada}}</li>
+     <li>{{i.photo}}</li>
+     <img src="media/{{i.photo}}" alt="image not found " width="100px" higth="70px">
+{% endfor %}
+</body>
+</html>
