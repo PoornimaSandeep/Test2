@@ -1,0 +1,9 @@
+18-02-2022
+
+Topic :Today i worked on one django project student_management system , that is i taken from others github account and
+ then i did modification in that
+
+github_link:https://github.com/PoornimaSandeep/student_management.git
+
+1.i add leaves count in the staff_leave report -done
+2.Try add craete zoom_link and save by staff -not completed
